@@ -11,12 +11,10 @@ Using XGBoost with Synthetic Minority Over-sampling Technique (SMOTE) to balance
 
 # Flask App:
 
-Building the backend of the web interface using Flask and deploying the model to the app.
+Building the backend of the web application using Flask and HTML frontend and deploying the model to the app.
 # Requirements
 Python 3.x
 Libraries: pandas, numpy, matplotlib, seaborn, xgboost, imblearn, sklearn, flask
-The Flask app will be running at http://localhost:5000/
-
 Use the web interface to input new customer information and predict the likelihood of churn.
 
 # Conclusion
