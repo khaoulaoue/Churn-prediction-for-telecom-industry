@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+<!DOCTYPE html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #333;
+    margin: 2em auto;
+    width: 40%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #333;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1em;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+</style>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Telco Churn Predictor</title>
+  </head>
+  <body>
+    <header>
+      <h1>Telco Churn Predictor</h1>
+    </header>
+    <form action="/predict" method="post">
+      <label for="tenure">Tenure (months):</label>
+      <input type="text" id="tenure" name="tenure"><br><br>
+      <label for="MonthlyCharges">Monthly Charges:</label>
+      <input type="text" id="MonthlyCharges" name="MonthlyCharges"><br><br>
+      <label for="TotalCharges">Total Charges:</label>
+      <input type="text" id="TotalCharges" name="TotalCharges"><br><br>
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="gender"><br><br>
+      <label for="SeniorCitizen">Senior Citizen:</label>
+      <input type="text" id="SeniorCitizen" name="SeniorCitizen"><br><br>
+      <label for="Partner">Partner:</label>
+      <input type="text" id="Partner" name="Partner"><br><br>
+      <label for="Dependents">Dependents:</label>
+      <input type="text" id="Dependents" name="Dependents"><br><br>
+      <label for="PhoneService">PhoneService:</label>
+      <input type="text" id="PhoneService" name="PhoneService"><br><br>
+      <label for="MultipleLines">MultipleLines:</label>
+      <input type="text" id="MultipleLines" name="MultipleLines"><br><br>
+      <label for="InternetService">InternetService:</label>
+      <input type="text" id="InternetService" name="InternetService"><br><br>
+      <label for="OnlineSecurity">OnlineSecurity:</label>
+      <input type="text" id="OnlineSecurity" name="OnlineSecurity"><br><br>
+      <label for="OnlineBackup">OnlineBackup:</label>
+      <input type="text" id="OnlineBackup" name="OnlineBackup"><br><br>
+      <label for="DeviceProtection">DeviceProtection:</label>
+      <input type="text" id="DeviceProtection" name="DeviceProtection"><br><br>
+      <label for="TechSupport">TechSupport:</label>
+      <input type="text" id="TechSupport" name="TechSupport"><br><br>
+      <label for="StreamingTV">StreamingTV:</label>
+      <input type="text" id="StreamingTV" name="StreamingTV"><br><br>
+      <label for="StreamingMovies">StreamingMovies:</label>
+      <input type="text" id="StreamingMovies" name="StreamingMovies"><br><br>
+      <label for="Contract">Contract:</label>
+      <input type="text" id="Contract" name="Contract"><br><br>
+      <label for="PaperlessBilling">PaperlessBilling:</label>
+      <input type="text" id="PaperlessBilling" name="PaperlessBilling"><br><br>
+      <label for="PaymentMethod">PaymentMethod:</label>
+      <input type="text" id="PaymentMethod" name="PaymentMethod"><br><br>
+      <tr class="form_wrapper">
+        <td colspan='2'> <input type="submit" value="PREDICT CHURNER "/></td>
+       </tr>
+   </table>
+    </form>
+  </body>
+</html>
+   
