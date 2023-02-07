@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Display Results</title>
+    <style>
+      h1 {
+        font-family: 'Lucida Console', cursive;
+        font-size: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      h3 {
+        margin: 1em 0 0.5em 0;
+        color: #343434;
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: normal;
+        text-transform: uppercase;
+        font-family: 'Courier New', cursive;
+        letter-spacing: 1px;
+        font-style: italic;
+        text-align: center;
+      }
+
+      .tab {
+        text-align: center;
+        border: 3px solid green;
+      }
+
+      .showTable {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MODEL OUTCOME</h1>
+    <div class="prediction">
+      <h3>
+        Our Churn Prediction for this customer:
+        <u><b>{{result}}</b></u>
+      </h3>
+    </div>
+  </body>
+</html>
